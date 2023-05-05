@@ -1,0 +1,119 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #2d2d2d;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1em;
+}
+
+.top-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1em;
+}
+
+.title {
+    display: flex;
+    align-items: center;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar li {
+    margin-right: 1em;
+}
+
+.navbar a {
+    color: #fff;
+    text-decoration: none;
+    transition: all 0.2s ease-in-out;
+}
+
+.navbar a:hover {
+    color: #ccc;
+}
+
+hr {
+    border: none;
+    height: 1px;
+}
+
+.main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 1em;
+}
+
+.bot-info {
+    flex-basis: 60%;
+}
+
+.sidebar {
+    display: flex;
+    flex-basis: 35%;
+    justify-content: space-between;
+}
+
+.sidebar .left-footer p,
+.sidebar .right-footer p {
+    margin-top: 0.5em;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1em;
+}
+
+.invite-button {
+    padding: 0.5em 1em;
+    border: none;
+    border-radius: 5px;
+    background-color: #2f3136;
+    color: #fff;
+    font-size: 1em;
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+}
+
+.invite-button:hover {
+    background-color: #3e4147;
+}
+
+.links {
+    display: flex;
+}
+
+.links-column {
+    display: flex;
+    flex-direction: column;
+    margin-right: 1em;
+}
+
+.links p {
+    margin: 0;
+    padding: 0.5em 0;
+    font-size: 0.9em;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+.links p:hover {
+    color: #ccc;
+}
