@@ -24,8 +24,8 @@ export class WebHhye {
 
         this.app.use(express.static(path.join('./src', 'utils')));
 
-        this.app.listen(env.PORT, () => {
-            console.log('Server listening on port 8080');
+        this.app.listen(env.PORT ?? 8080, () => {
+            console.log(`Server listening on port ${env.PORT ?? 8080}`);
         });
     }
 
