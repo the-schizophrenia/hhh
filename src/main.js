@@ -1,8 +1,8 @@
 import { readdirSync } from 'fs';
 import express, { json, urlencoded } from 'express';
-import session from 'express-session';
 import expressLayouts from 'express-ejs-layouts';
 import path from 'path';
+import { env } from 'process';
 
 export class WebHhye {
     constructor() {
@@ -16,7 +16,6 @@ export class WebHhye {
         this.app.set('view engine', 'ejs');
         this.app.use(urlencoded({ extended: false }));
         this.app.use(expressLayouts);
-        this.app.use(session({ secret: `${Date.now()}`, resave: false, saveUninitialized: false }));
         this.app.use((req, res, next) => {
             next();
         });
